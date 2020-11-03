@@ -1,0 +1,18 @@
+public class ForLoopUnderstand {
+    public static void main(String[] args) {
+
+        for (int i = 1; i <= 10; i++) {
+            /*             java can convert whole number integer (i) to double (interest)
+                           passing the value that we got returned from our calculate interest
+                           method to the String.format command and what that does the %.2f this
+                           case means output the number or convert the number and output it with
+                           just two decimal points
+            */
+            System.out.println(String.format("%.2f", calculatePercentage(1000, i)));
+        }
+    }
+
+    public static double calculatePercentage(double amount, double interest) {
+         return (amount * (interest / 100));
+    }
+}
